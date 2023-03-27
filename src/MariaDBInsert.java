@@ -25,4 +25,7 @@ public class MariaDBInsert {
             e.printStackTrace();
         }
     }
+
+
+
 }

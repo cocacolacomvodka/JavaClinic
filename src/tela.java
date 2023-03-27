@@ -18,6 +18,7 @@ public class tela extends JFrame {
     private JRadioButton masculinoRadioButton;
     private JRadioButton femininoRadioButton;
     private JRadioButton outroRadioButton;
+    private JButton Pacientes;
     private ButtonGroup EscolherSexo;
 
     public tela(String titulo){
@@ -53,6 +54,12 @@ public class tela extends JFrame {
                 String estado = InputEstado.getText();
 
                 MariaDBInsert.insertData(nome, nasc, rg, sexo, fone, estCivi, endereco, cidade, estado);
+            }
+        });
+        Pacientes.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
     }
